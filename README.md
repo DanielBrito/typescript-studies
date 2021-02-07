@@ -10,3 +10,7 @@ These examples cover different aspects of several development tools and concepts
 ## :rocket: Other Projects
 
 - [Ecoleta](https://github.com/DanielBrito/ecoleta-nlw-rocketseat)
+
+## 🎉 Cool Stuff
+
+- [TS Playground](https://www.typescriptlang.org/play)
