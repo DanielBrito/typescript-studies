@@ -7,9 +7,10 @@ These examples cover different aspects of several development tools and concepts
 - ReactJS with TypeScript
 - Hooks with TypeScript
 
-## :rocket: Other Projects
+## :rocket: Tutorials Projects
 
 - [Ecoleta](https://github.com/DanielBrito/ecoleta-nlw-rocketseat)
+- [NPS API](https://github.com/DanielBrito/nps-nlw-rocketseat)
 
 ## 🎉 Cool Stuff
 
