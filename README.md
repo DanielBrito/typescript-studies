@@ -1,11 +1,11 @@
 # 🟦 Learning TypeScript
 
-These examples cover different aspects of several development tools and concepts related to TypeScript from my [self-learning](https://github.com/DanielBrito/self-learning) studies.
+These examples cover different aspects of several development tools and concepts related to TypeScript from my [self-directed](https://github.com/DanielBrito/self-learning) studies.
 
 ## 📑 Learning Topics
 
-- ReactJS with TypeScript
-- Hooks with TypeScript
+- ReactJS (with TypeScript)
+- Hooks (with TypeScript)
 
 ## :rocket: Tutorials Projects
 
