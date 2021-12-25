@@ -1,17 +1,18 @@
-# 🟦 Learning TypeScript
+# 🟦 TypeScript Studies
 
-These examples cover different aspects of several development tools and concepts related to TypeScript from my [self-directed](https://github.com/DanielBrito/self-learning) studies.
+These experiments cover different tools and concepts related to TypeScript from my [self-directed](https://github.com/DanielBrito/self-learning) studies.
 
 ## 📑 Learning Topics
 
-- ReactJS (with TypeScript)
-- Hooks (with TypeScript)
+- React
+- Hooks
+- Redux
+- Saga
 
-## :rocket: Tutorials Projects
+## :rocket: Projects
 
 - [Ecoleta](https://github.com/DanielBrito/ecoleta-nlw-rocketseat)
-- [NPS API](https://github.com/DanielBrito/nps-nlw-rocketseat)
 
-## 🎉 Cool Stuff
+## :toolbox: Tools
 
 - [TS Playground](https://www.typescriptlang.org/play)
