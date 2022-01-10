@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", // where to put the TS files
+    "module": "CommonJS", // allows JS file to run with Node
+    "target": "ES2015" // which level of JS support to target
+  },
+  "include": ["src"] // which files to compile
+}
