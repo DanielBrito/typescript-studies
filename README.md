@@ -13,6 +13,10 @@ These experiments cover different tools and concepts related to TypeScript from 
 
 - [Ecoleta](https://github.com/DanielBrito/ecoleta-nlw-rocketseat)
 
+## :card_file_box: Resources
+
+- [TypeScript Training](https://www.typescript-training.com/) (Mike North)
+
 ## :toolbox: Tools
 
 - [TS Playground](https://www.typescriptlang.org/play)
