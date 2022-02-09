@@ -9,6 +9,11 @@ These experiments cover different tools and concepts related to TypeScript from 
 - Redux
 - Saga
 
+## :toolbox: Tools
+
+- [API Extractor](https://api-extractor.com/)
+- [API Documentater](https://www.npmjs.com/package/@microsoft/api-documenter)
+
 ## :rocket: Projects
 
 - [Ecoleta](https://github.com/DanielBrito/ecoleta-nlw-rocketseat)
