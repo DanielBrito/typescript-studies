@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const Loading: React.FunctionalComponent<any> = ({
+const Loading: React.FunctionComponent<any> = ({
   message = 'Loading...',
   children,
 }) => (

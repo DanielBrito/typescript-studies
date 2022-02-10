@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Channel from './Channel';
 
-const SelectedChannel: React.FunctionalComponent<any> = ({
+const SelectedChannel: React.FunctionComponent<any> = ({
   match,
   channels,
 }) => {

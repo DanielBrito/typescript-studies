@@ -6,7 +6,7 @@ import ChannelHeader from './Channel/Header';
 import ChannelMessage from './Channel/Message';
 import Loading from './Loading';
 
-const Channel: React.FunctionalComponent<any> = ({ channel }) => {
+const Channel: React.FunctionComponent<any> = ({ channel }) => {
   const [messages, setMessages] = React.useState<any[]>();
 
   useAsyncDataEffect(

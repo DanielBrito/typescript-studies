@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const Header: React.FunctionalComponent<any> = ({
+const Header: React.FunctionComponent<any> = ({
   title,
   description,
 }) => (

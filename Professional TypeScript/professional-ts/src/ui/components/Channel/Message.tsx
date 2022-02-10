@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { formatTimestamp } from '../../../utils/date';
 
-const Message: React.FunctionalComponent<any> = ({
+const Message: React.FunctionComponent<any> = ({
   user,
   date,
   body,

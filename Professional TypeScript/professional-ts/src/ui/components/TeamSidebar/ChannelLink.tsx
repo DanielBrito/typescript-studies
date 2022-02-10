@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 
-const ChannelLink: React.FunctionalComponent<any> = ({
+const ChannelLink: React.FunctionComponent<any> = ({
   to,
   channel,
 }) => {
