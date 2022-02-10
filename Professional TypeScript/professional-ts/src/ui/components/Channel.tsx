@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-
 import * as React from 'react';
 import { getChannelMessages } from '../../data/messages';
 import { useAsyncDataEffect } from '../../utils/api';
