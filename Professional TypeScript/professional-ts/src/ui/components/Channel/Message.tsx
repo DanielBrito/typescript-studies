@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+
 import * as React from 'react';
 import { formatTimestamp } from '../../../utils/date';
 

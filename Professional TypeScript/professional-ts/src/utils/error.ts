@@ -1,4 +1,5 @@
 // @ts-check
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
 
 /**
  * Stringify an Error instance

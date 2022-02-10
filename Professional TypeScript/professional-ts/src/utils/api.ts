@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable promise/always-return */
+
 import { useEffect } from 'react';
 import Deferred from './deferred';
 
