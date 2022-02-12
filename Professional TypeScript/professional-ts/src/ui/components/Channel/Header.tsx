@@ -1,6 +1,11 @@
 import * as React from 'react';
 
-const Header: React.FunctionComponent<any> = ({
+interface IProps {
+  title: string;
+  description: string;
+}
+
+const Header: React.FunctionComponent<IProps> = ({
   title,
   description,
 }) => (

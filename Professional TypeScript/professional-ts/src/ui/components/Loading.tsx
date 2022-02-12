@@ -1,6 +1,11 @@
 import * as React from 'react';
 
-const Loading: React.FunctionComponent<any> = ({
+interface IProps {
+  message: string;
+  children?: React.ReactChild;
+}
+
+const Loading: React.FunctionComponent<IProps> = ({
   message = 'Loading...',
   children,
 }) => (

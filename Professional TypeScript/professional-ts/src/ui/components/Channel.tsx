@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { IChannel, IMessage } from '../../types';
 import { getChannelMessages } from '../../data/messages';
 import { useAsyncDataEffect } from '../../utils/api';
 import ChannelFooter from './Channel/Footer';
@@ -6,8 +7,12 @@ import ChannelHeader from './Channel/Header';
 import ChannelMessage from './Channel/Message';
 import Loading from './Loading';
 
-const Channel: React.FunctionComponent<any> = ({ channel }) => {
-  const [messages, setMessages] = React.useState<any[]>();
+interface IProps {
+  channel: IChannel;
+}
+
+const Channel: React.FunctionComponent<IProps> = ({ channel }) => {
+  const [messages, setMessages] = React.useState<IMessage[]>();
 
   useAsyncDataEffect(
     () => getChannelMessages(channel.teamId, channel.id),
@@ -36,7 +41,7 @@ const Channel: React.FunctionComponent<any> = ({ channel }) => {
         className="py-4 flex-1 overflow-y-scroll channel-messages-list"
         role="list"
       >
-        {messages.map((m: any) => (
+        {messages.map((m: IMessage) => (
           <ChannelMessage
             key={m.id}
             body={m.body}

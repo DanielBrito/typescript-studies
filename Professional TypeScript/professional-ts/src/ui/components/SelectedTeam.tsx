@@ -1,7 +1,14 @@
 import * as React from 'react';
+import { match } from 'react-router-dom';
+import { ITeam } from '../../types';
 import Team from './Team';
 
-const SelectedTeam: React.FunctionComponent<any> = ({
+interface IProps {
+  match: match<Record<string, string>>;
+  teams: ITeam[];
+}
+
+const SelectedTeam: React.FunctionComponent<IProps> = ({
   match,
   teams,
 }) => {
@@ -16,7 +23,7 @@ const SelectedTeam: React.FunctionComponent<any> = ({
   if (!selectedTeamId) throw new Error(`undefined teamId`);
 
   const selectedTeam = teams.find(
-    (t: any) => t.id === selectedTeamId,
+    (t: ITeam) => t.id === selectedTeamId,
   );
 
   if (!selectedTeam) {

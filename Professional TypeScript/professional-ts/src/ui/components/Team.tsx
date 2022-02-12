@@ -2,8 +2,13 @@ import * as React from 'react';
 import { Route, Switch, match } from 'react-router-dom';
 import SelectedChannel from './SelectedChannel';
 import TeamSidebar from './TeamSidebar';
+import { ITeam } from '../../types';
 
-const Team: React.FunctionComponent<any> = ({ team }) => {
+interface IProps {
+  team: ITeam;
+}
+
+const Team: React.FunctionComponent<IProps> = ({ team }) => {
   console.log(
     `%c TEAM render: ${team.name}`,
     'background-color: blue; color: white',

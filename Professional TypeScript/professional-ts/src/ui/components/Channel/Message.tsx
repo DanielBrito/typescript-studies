@@ -1,7 +1,14 @@
 import * as React from 'react';
+import { IUser } from '../../../types';
 import { formatTimestamp } from '../../../utils/date';
 
-const Message: React.FunctionComponent<any> = ({
+interface IProps {
+  user: IUser;
+  date: Date;
+  body: string;
+}
+
+const Message: React.FunctionComponent<IProps> = ({
   user,
   date,
   body,

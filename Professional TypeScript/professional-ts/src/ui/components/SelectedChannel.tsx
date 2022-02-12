@@ -1,7 +1,14 @@
 import * as React from 'react';
+import { match } from 'react-router-dom';
+import { IChannel } from '../../types';
 import Channel from './Channel';
 
-const SelectedChannel: React.FunctionComponent<any> = ({
+interface IProps {
+  match: match<Record<string, string>>;
+  channels: IChannel[];
+}
+
+const SelectedChannel: React.FunctionComponent<IProps> = ({
   match,
   channels,
 }) => {
@@ -17,7 +24,7 @@ const SelectedChannel: React.FunctionComponent<any> = ({
   if (!selectedChannelId) return <p>Invalid channelId</p>;
 
   const selectedChannel = channels.find(
-    (c: any) => c.id === selectedChannelId,
+    (c: IChannel) => c.id === selectedChannelId,
   );
 
   if (!selectedChannel) {

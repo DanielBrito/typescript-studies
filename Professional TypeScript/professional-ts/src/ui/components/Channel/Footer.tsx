@@ -1,6 +1,11 @@
 import * as React from 'react';
+import { IChannel } from '../../../types';
 
-const Footer: React.FunctionComponent<any> = ({
+interface IProps {
+  channel: IChannel;
+}
+
+const Footer: React.FunctionComponent<IProps> = ({
   channel: { name: channelName },
 }) => (
   <footer className="pb-6 px-4 flex-none channel-footer">

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 class Deferred {
   #_promise: any;
   #_resolve: any;

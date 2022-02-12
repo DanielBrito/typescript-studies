@@ -1,7 +1,12 @@
 import * as React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
+import { ITeam } from '../../../types';
 
-const TeamLink: React.FunctionComponent<any> = ({ team }) => {
+interface IProps {
+  team: ITeam;
+}
+
+const TeamLink: React.FunctionComponent<IProps> = ({ team }) => {
   const match = useRouteMatch({
     path: `/team/${team.id}`,
     exact: false,
@@ -19,7 +24,7 @@ const TeamLink: React.FunctionComponent<any> = ({ team }) => {
         <img
           className="team-selector__team-logo"
           src={team.iconUrl}
-          alt={`Join the ${name} chat`}
+          alt={`Join the ${team.name} chat`}
         />
       </div>
     </Link>
