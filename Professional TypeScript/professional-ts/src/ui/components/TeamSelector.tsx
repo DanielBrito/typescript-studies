@@ -1,9 +1,14 @@
 import * as React from 'react';
 import TeamLink from './TeamSelector/TeamLink';
+import { ITeam } from '../../types';
 
-const TeamSelector = ({ teams }) => (
+interface IProps {
+  teams: ITeam[];
+}
+
+const TeamSelector: React.FunctionComponent<IProps> = ({ teams }) => (
   <nav className="team-selector bg-indigo-900 border-indigo-900 border-r-2 pt-2 text-purple-300 flex-none block">
-    {teams.map((team) => {
+    {teams.map((team: ITeam) => {
       const { id, ...rest } = team;
       return <TeamLink team={team} key={id} {...rest} />;
     })}

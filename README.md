@@ -4,15 +4,19 @@ These experiments cover different tools and concepts related to TypeScript from 
 
 ## 📑 Topics
 
-- React
-- Hooks
-- Redux
-- Saga
+- Functions
+- Types & Values
+- Generics
+- Refactoring
+- Testing
 
 ## :toolbox: Tools
 
+- [React](https://www.typescriptlang.org/pt/docs/handbook/react.html)
+- [Redux](https://redux.js.org/usage/usage-with-typescript)
+- [Saga](https://redux-saga.js.org/)
 - [API Extractor](https://api-extractor.com/)
-- [API Documentater](https://www.npmjs.com/package/@microsoft/api-documenter)
+- [API Documenter](https://www.npmjs.com/package/@microsoft/api-documenter)
 
 ## :rocket: Projects
 

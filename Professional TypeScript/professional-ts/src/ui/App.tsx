@@ -3,23 +3,27 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
+  match,
 } from 'react-router-dom';
 import { getAllTeams } from '../data/teams';
 import { useAsyncDataEffect } from '../utils/api';
 import Loading from './components/Loading';
 import SelectedTeam from './components/SelectedTeam';
 import TeamSelector from './components/TeamSelector';
+import { ITeam } from '../types';
 
 const { useState } = React;
 
-const App = () => {
-  const [teams, setTeams] = useState();
+const App: React.FunctionComponent = () => {
+  const [teams, setTeams] = useState<ITeam[]>();
 
   useAsyncDataEffect(() => getAllTeams(), {
     setter: setTeams,
     stateName: 'teams',
   });
+
   if (!teams) return <Loading message="Loading teams" />;
+
   return (
     <Router>
       <div className="flex flex-col sm:flex-row w-full h-full">
@@ -37,13 +41,16 @@ const App = () => {
           </Route>
           <Route
             path="/team/:teamId"
-            children={({ match }) => (
-              <SelectedTeam match={match} teams={teams} />
-            )}
+            children={({
+              match,
+            }: {
+              match: match<{ teamId: string }>;
+            }) => <SelectedTeam match={match} teams={teams} />}
           />
         </Switch>
       </div>
     </Router>
   );
 };
+
 export default App;
