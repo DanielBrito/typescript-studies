@@ -5,3 +5,7 @@ _Learn to use the TypeScript language at scale to increase the developer experie
 ## Reference
 
 [Production-Grade TypeScript](https://frontendmasters.com/courses/production-typescript/) (Frontend Masters)
+
+## Preview
+
+![Slack Clone](preview.png)
