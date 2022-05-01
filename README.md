@@ -29,3 +29,7 @@ These experiments cover different tools and concepts related to TypeScript from 
 ## :toolbox: Tools
 
 - [TS Playground](https://www.typescriptlang.org/play)
+
+## ⚔️ Challenges
+
+- [Type Challenges](https://tsch.js.org/)
