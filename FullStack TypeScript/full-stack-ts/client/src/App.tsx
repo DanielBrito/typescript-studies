@@ -68,6 +68,21 @@ export const GET_CURRENT_USER = gql`
       avatarUrl
       reason
     }
+    trends {
+      ... on TopicTrend {
+        tweetCount
+        topic
+        quote {
+          title
+          imageUrl
+          description
+        }
+      }
+      ... on HashtagTrend {
+        tweetCount
+        hashtag
+      }
+    }
   }
 `;
 
@@ -78,12 +93,15 @@ const App: React.FC = () => {
   if (error) return <p>Error: {error}</p>;
   if (!data) return <p>No data.</p>;
 
-  const { currentUser, suggestions = [] } = data;
+  const { currentUser, suggestions = [], trends = [] } = data;
 
   const { favorites: rawFavorites } = currentUser;
+
   const favorites = (rawFavorites || [])
     .map((f) => f.tweet?.id)
     .filter(isDefined);
+
+  const filteredTrends = trends.filter(isDefined);
 
   console.log({ favorites: currentUser.favorites });
 
@@ -97,9 +115,10 @@ const App: React.FC = () => {
           currentUserId={CURRENT_USER.id}
           currentUserFavorites={favorites}
         />
-        <RightBar trends={TRENDS} suggestions={suggestions} />
+        <RightBar trends={filteredTrends} suggestions={suggestions} />
       </div>
     </div>
   );
 };
+
 export default App;
