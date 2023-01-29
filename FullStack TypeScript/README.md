@@ -9,4 +9,4 @@ _TypeScript offers a delightful authoring experience, but all bets are off once 
 
 ## Preview
 
-TODO
+![Twitter Clone](preview.png)
